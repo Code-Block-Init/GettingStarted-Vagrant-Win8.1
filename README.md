@@ -26,12 +26,12 @@ For listing the virtual boxes --> <code>vagrant box list</code> <br>
 If we wanna delete a box --> <code>vagrant box remove box/name </code> <br>
 During the end of installation in step 6, we would have noticed a problem in <code>SSH</code>. <br>
 For that, we require to use <code>PuTTY</code>. <br>
-<b>Step 8:</b> <br>
+<b>Step 9:</b> <br>
 Open PuTTY. <br>
 Set host address as <code>127.0.0.1</code> and port as <code>2200</code> <br>
 As default, <br>
 For config, check --> <code>vagrant ssh-config</code> <br> and also:- <code>vagrant ssh</code> <br>
-<b>Step 9:</b><br>
+<b>Step 10:</b><br>
 Next is about using public key and private key... <br>
 Open PuTTYgen. <br>
 If you already have a public/private key, then click <code>load</code> and load the key. <br>
