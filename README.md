@@ -36,4 +36,13 @@ Next is about using public key and private key... <br>
 Open PuTTYgen. <br>
 If you already have a public/private key, then click <code>load</code> and load the key. <br>
 You may already have one stored in <code>.vagrant.d</code> which is insecure. <br>
-If not, then click <code>Generate</code> and <code>Load</code> the generated key.
+If not, then click <code>Generate</code>.<br>
+After generating it, click <code>Save Private Key</code> and then, <code>Load</code>. <br>
+In the meantime, open <code>PuTTY</code>, expand <code>SSH</code> towards your left. <br>
+Click <code>Auth</code>. Then, To your right, browse and add the saved private key.
+<br><br>
+<b>Important Basic Hints:- </b><br>
+To check vagrant status -> <code>vagrant status</code><br>
+To stop or turn off vagrant -> <code>vagrant halt</code><br>
+To suspend vagrant -> <code>vagrant suspend</code><br>
+To turn back vagrant on -> <code>vagrant up</code><br>
