@@ -19,5 +19,21 @@ Remember to remove the <code>Vagrant file</code> which will be found in <code>bi
 <b>Step 6:</b>
 <code>vagrant init ubuntu/trusty64</code> --- this is official box for Ubuntu Server 14.04 LTS. <br>
 
-<b>Step 7:</b>
-<code>vagrant up</code> <br> --- Now, we need to wait for few hours for the installation to complete.
+<b>Step 7:</b><br>
+<code>vagrant up</code> --- Now, we need to wait for few hours for the installation to complete. <br>
+<b>Step 8: </b> --- Now, installation is completed. <br>
+For listing the virtual boxes --> <code>vagrant box list</code> <br>
+If we wanna delete a box --> <code>vagrant box remove box/name </code> <br>
+During the end of installation in step 6, we would have noticed a problem in <code>SSH</code>. <br>
+For that, we require to use <code>PuTTY</code>. <br>
+<b>Step 8:</b> <br>
+Open PuTTY. <br>
+Set host address as <code>127.0.0.1</code> and port as <code>2200</code> <br>
+As default, <br>
+For config, check --> <code>vagrant ssh-config</code> <br> and also:- <code>vagrant ssh</code> <br>
+<b>Step 9:</b><br>
+Next is about using public key and private key... <br>
+Open PuTTYgen. <br>
+If you already have a public/private key, then click <code>load</code> and load the key. <br>
+You may already have one stored in <code>.vagrant.d</code> which is insecure. <br>
+If not, then click <code>Generate</code> and <code>Load</code> the generated key.
