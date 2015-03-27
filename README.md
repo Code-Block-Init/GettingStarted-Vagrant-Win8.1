@@ -13,7 +13,7 @@ Then... BAM! Windows10 collapsed and died. So, this is a warning.<br>
 <b>Step 4:</b> Install <a href="http://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe">PuTTYgen</a>.<br>
 Good job! Now, we will require <code>Cloud</code>. <br>
 <b>Step 5:</b> Open Command Prompt (run as admin). Dive-in to the directory location.<br>
-If your files in another disk, then type <code>cd\</code> and followed by <code>d:</code> or <code>e:</code> or whatever. <br>
+If your files in another disk, then type cd\ and followed by <code>d:</code> or <code>e:</code> or whatever. <br>
 Remember to remove the <code>Vagrant file</code> which will be found in <code>bin</code> folder. <br>
 
 <b>Step 6:</b>
