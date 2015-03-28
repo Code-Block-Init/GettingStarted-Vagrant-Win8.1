@@ -39,10 +39,14 @@ You may already have one stored in <code>.vagrant.d</code> which is insecure. <b
 If not, then click <code>Generate</code>.<br>
 After generating it, click <code>Save Private Key</code> and then, <code>Load</code>. <br>
 In the meantime, open <code>PuTTY</code>, expand <code>SSH</code> towards your left. <br>
-Click <code>Auth</code>. Then, To your right, browse and add the saved private key.
-<br><br>
+Click <code>Auth</code>. Then, To your right, browse and add the saved private key. 
+<br>
 <b>Important Basic Hints:- </b><br>
 To check vagrant status -> <code>vagrant status</code><br>
 To stop or turn off vagrant -> <code>vagrant halt</code><br>
 To suspend vagrant -> <code>vagrant suspend</code><br>
+To resume vagrant -> <code>vagrant resume</code><br>
 To turn back vagrant on -> <code>vagrant up</code><br>
+<br>
+As developers, next is about setting-up a development environment using Vagrant. <br>
+<b>Step 11</b>: Go to <a href="https://github.com/Varying-Vagrant-Vagrants/VVV#the-first-vagrant-up">VVV</a> and follow from step 4 to get started with <code>wordpress</code> setup configuration. <br>
