@@ -49,4 +49,26 @@ To resume vagrant -> <code>vagrant resume</code><br>
 To turn back vagrant on -> <code>vagrant up</code><br>
 <br>
 As developers, next is about setting-up a development environment using Vagrant. <br>
-<b>Step 11:</b><br> Go to <b><a href="https://github.com/Varying-Vagrant-Vagrants/VVV#the-first-vagrant-up">VVV</a></b> and follow from step 4 to get started with <code>wordpress</code> setup configuration. <br>
+<b>Step 11:</b><br> Go to <b><a href="https://github.com/Varying-Vagrant-Vagrants/VVV#the-first-vagrant-up">VVV</a></b> and follow from step 4 to get started with <code>setup configuration</code>. 
+<br>
+After successfully accomplishing <code>step 11</code>, Here are bunch of free toys we will get to play:- 
+<br>
+<code>WordPress Develop, WordPress Stable, WordPress Trunk, WP-CLI, nginx 1.6.x, mysql 5.5.x, php-fpm 5.5.x, 
+memcached 1.4.13, 
+PHP memcache extension 3.0.8,
+PHP xdebug extension 2.2.5, 
+PHP imagick extension 3.1.2, 
+PHPUnit 4.0.x, 
+ack-grep 2.04, 
+git 1.9.x, 
+subversion 1.8.x,
+ngrep,
+dos2unix,
+Composer,
+phpMemcachedAdmin,
+phpMyAdmin 4.1.14 (multi-language),
+Opcache Status,
+Webgrind,
+NodeJs Current Stable Version,
+grunt-cli Current Stable Version
+</code>
