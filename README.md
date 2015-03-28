@@ -49,4 +49,4 @@ To resume vagrant -> <code>vagrant resume</code><br>
 To turn back vagrant on -> <code>vagrant up</code><br>
 <br>
 As developers, next is about setting-up a development environment using Vagrant. <br>
-<b>Step 11</b>: Go to <a href="https://github.com/Varying-Vagrant-Vagrants/VVV#the-first-vagrant-up">VVV</a> and follow from step 4 to get started with <code>wordpress</code> setup configuration. <br>
+<b>Step 11:</b><br> Go to <b><a href="https://github.com/Varying-Vagrant-Vagrants/VVV#the-first-vagrant-up">VVV</a></b> and follow from step 4 to get started with <code>wordpress</code> setup configuration. <br>
