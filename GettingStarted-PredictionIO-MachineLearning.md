@@ -21,9 +21,22 @@ You will enter into a console prompt.<br>
 For checking status:- <code>pio status</code><br>
 <b>Step 6:</b><br>
 Start with a template...<br>
-<code>$ pio template get PredictionIO/template-scala-parallel-recommendation MeowMeow </code>
+<code>$pio template get PredictionIO/template-scala-parallel-recommendation MeowMeow </code>
 <br>
 <b>Step 7:</b><br>
 <code>$cd MeowMeow</code><br>
 Creating a new App... <br>
-<code>$pio app new MeowApp </code>
+<code>$pio app new MeowApp </code> <br>
+For listing apps -- <code>$pio app list</code><br>
+<b>Step 8:</b><br>
+Collecting and importing data... <br>
+<code>$git clone https://github.com/PredictionIO/PredictionIO-Python-SDK.git</code> <br>
+<code>$curl https://raw.githubusercontent.com/apache/spark/master/data/mllib/sample_movielens_data.txt --create-dirs -o data/sample_movielens_data.txt</code> <br>
+<code>$ python data/import_eventserver.py --access_key [app key ID]</code><br>
+<b>Step 9:</b><br>
+Building and training...
+<code>$pio build</code> <br>
+<code>$pio train</code><br>
+<b>Step 10:</b><br>
+Deploying... <br>
+<code>$pio deploy</code><br>
