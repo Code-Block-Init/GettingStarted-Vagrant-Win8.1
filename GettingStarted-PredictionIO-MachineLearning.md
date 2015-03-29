@@ -34,7 +34,7 @@ Collecting and importing data... <br>
 <code>$curl https://raw.githubusercontent.com/apache/spark/master/data/mllib/sample_movielens_data.txt --create-dirs -o data/sample_movielens_data.txt</code> <br>
 <code>$ python data/import_eventserver.py --access_key [app key ID]</code><br>
 <b>Step 9:</b><br>
-Building and training...
+Building and training... <br>
 <code>$pio build</code> <br>
 <code>$pio train</code><br>
 <b>Step 10:</b><br>
