@@ -2,7 +2,7 @@
 If you don't have vagrant installed, then follow first 10 steps in <a href="https://github.com/dragonwolverines/GettingStarted-Vagrant-Win8.1/blob/master/README.md">README</a>.<br>
 Next is installing <a href="http://docs.prediction.io/">PredictionIO</a>... <br>
 <b>Step 2:</b><br>
-For easy download, Clone via <a href="http://git-scm.com/download/win">Git</a>.
+For easy download, Clone via <a href="http://git-scm.com/download/win">Git</a>. <br>
 <code>$git clone https://github.com/PredictionIO/PredictionIO-Vagrant.git</code><br>
 <b>Step 3:</b><br>
 Dive-in to the directory. <br>
@@ -18,3 +18,12 @@ Java SE Development Kit 7 </code><br>
 You will enter into a console prompt.<br>
 <b>Step 5:</b><br>
 <code>pio-start-all</code><br>
+For checking status:- <code>pio status</code><br>
+<b>Step 6:</b><br>
+Start with a template...<br>
+<code>$ pio template get PredictionIO/template-scala-parallel-recommendation MeowMeow </code>
+<br>
+<b>Step 7:</b><br>
+<code>$cd MeowMeow</code><br>
+Creating a new App... <br>
+<code>$pio app new MeowApp </code>
