@@ -21,7 +21,3 @@ Copy-Paste <a href="https://github.com/ashumeow/How-to-Make-a-Computer-Operating
 It will take some minutes to complete (since it's first time to boot up lucid32)...<br>
 <b>Step 5:</b><br>
 <code>$vagrant ssh</code><br>
-Copy-Paste <a href="https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System/blob/master/src/Makefile">this file</a> into the editor and save it as <code>Makefile</code> without any file extension in <code>basic-os</code> directory. <br>
-<code>~$cd /vagrant</code><br>
-<code>~$make all</code><br>
-<b>status:</b> Stuck :|
