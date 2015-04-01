@@ -28,5 +28,11 @@ Copy all files in <code>src</code> folder and paste it in <code>basic-os</code> 
 <code>$vagrant ssh</code><br>
 <code>~$cd /vagrant </code><br>
 <code>~$make all</code><br>
-<code>~$make run</code> -- it can't run because the <code>disk-image file</code> in <code>basic-os/sdk<code> is corrupted.
+<code>~$make run</code> -- it can't run because the <code>disk-image file</code> in <code>basic-os/sdk</code> is corrupted.
 <br>
+Guess what? We successfully learnt <code>how an operating system is made and built</code>... <br>
+Keep that <code>cloned-repo</code>. 
+<br>
+In that <code>cloned-repo</code> itself, the chapters will help in understanding the <code>internal-build</code>. <br>
+Now, delete those files and keep <code>lucid32</code> for future use... <br>
+LOL
