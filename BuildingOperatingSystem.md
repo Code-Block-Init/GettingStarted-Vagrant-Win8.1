@@ -34,5 +34,9 @@ Guess what? We successfully learnt <code>how an operating system is made and bui
 Keep that <code>cloned-repo</code>. 
 <br>
 In that <code>cloned-repo</code> itself, the chapters will help in understanding the <code>internal-build</code>. <br>
-Now, delete those files and keep <code>lucid32</code> for future use... <br>
-LOL
+Now, delete those basic-os directory files (except <code>Vagrantfile</code> and <code>.vagrant folder</code>) <br>
+Keep <code>lucid32</code> for future use... <br>
+<b>LOL</b><br>
+<code>$vagrant halt</code><br>
+<code>$vagrant up</code><br>
+<code>$vagrant provision</code><br>
