@@ -12,3 +12,11 @@ Using Git... <br>
 <br>
 It will take some hours to complete the installation... <br>
 <b>Step 3:</b><br>
+After installation... <br>
+Open any code editor... <br>
+Copy-Paste <a href="https://github.com/ashumeow/How-to-Make-a-Computer-Operating-System/blob/master/src/Vagrantfile">this file</a> into the editor and save it as <code>Vagrantfile</code> without any file extension in <code>basic-os</code> directory.
+<br>
+<b>Step 4:</b><br>
+<code>$vagrant up</code><br>
+It will take some hours to complete (since it's first time to boot up lucid32)...<br>
+<b>Step 5:</b><br>
