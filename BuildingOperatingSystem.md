@@ -20,4 +20,11 @@ Copy-Paste <a href="https://github.com/ashumeow/How-to-Make-a-Computer-Operating
 <code>$vagrant up</code><br>
 It will take some minutes to complete (since it's first time to boot up lucid32)...<br>
 <b>Step 5:</b><br>
+<code>$cd "/d/[someother path]" </code><br>
+<code>$git clone https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System.git </code><br>
+Copy all files in <code>src</code> folder and paste it in <code>basic-os</code> directory. <br>
+<b>Step 6:</b><br>
 <code>$vagrant ssh</code><br>
+<code>$cd /vagrant </code><br>
+<code>$make all</code><br>
+<b>Step 7:</b><br>
