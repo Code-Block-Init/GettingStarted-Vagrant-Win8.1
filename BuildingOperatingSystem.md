@@ -42,7 +42,7 @@ Keep <code>lucid32</code> for future use... <br>
 <code>$vagrant up</code><br>
 <code>$vagrant provision</code><br>
 <br>
-<b>Adding Try-Attempts:- <br>
+<b>Adding Try-Attempts:- </b> <br>
 After <code>Step 5</code>, <br>
 Goto <code>basic-os/sdk</code> directory, Delete the <code>c disk image, diskimage.sh, qemu.sh</code><br>
 Create own disk image inorder to avoid file corruption. <br>
