@@ -30,6 +30,7 @@ Copy all files in <code>src</code> folder and paste it in <code>basic-os</code> 
 <code>~$make all</code><br>
 <code>~$make run</code> -- it can't run because the <code>disk-image file</code> in <code>basic-os/sdk</code> is corrupted.
 <br>
+<b>Step 7:</b><br>
 Guess what? We successfully learnt <code>how an operating system is made and built</code>... <br>
 Keep that <code>cloned-repo</code>. 
 <br>
@@ -40,3 +41,56 @@ Keep <code>lucid32</code> for future use... <br>
 <code>$vagrant halt</code><br>
 <code>$vagrant up</code><br>
 <code>$vagrant provision</code><br>
+<br>
+<b>Adding Try-Attempts:- <br>
+After <code>Step 5</code>, <br>
+Goto <code>basic-os/sdk</code> directory, Delete the <code>c disk image, diskimage.sh, qemu.sh</code><br>
+Create own disk image inorder to avoid file corruption. <br>
+Make sure that <code>Git bash</code> is running in <code>admin mode</code>.<br>
+<code>$vagrant ssh</code><br>
+<code>~$cd /vagrant</code><br>
+We will create disk-image inside <code>sdk</code> directory. <br>
+<code>~$cd sdk</code><br>
+<code>~$qemu-img create c.img 2M</code><br>
+<code>~$fdisk ./c.img  << EOF</code><br>
+<code>x</code><br>
+<code>c</code><br>
+<code>4</code><br>
+<code>h</code><br>
+<code>16</code><br>
+<code>s</code><br>
+<code>63</code><br>
+<code>r</code><br>
+<code>n</code><br>
+<code>p</code><br>
+<code>1</code><br>
+<code>1</code><br>
+<code>4</code><br>
+<code>a</code><br>
+<code>1</code><br>
+<code>w</code><br> <br>
+<code>~$fdisk -l -u ./c.img</code><br>
+<br>
+<code>~$losetup -o 32256 /dev/loop1 ./c.img</code> --- Got Permission denied <br>
+<code>~$mke2fs /dev/loop1</code> --- Got Permission denied <br>
+<code>~$mount  /dev/loop1 /mnt/ </code> --- Got Permission denied <br>
+<code>~$cp -R bootdisk/* /mnt/ </code> --- Got Permission denied <br>
+<code>~$umount /mnt/ </code> --- Got Permission denied <br>
+If permission does not get denied, then a successfully disk image will be ready to run. <br>
+<b>Installing <code>GRUB</code> on the disk:</b><br>
+<code>~$grub --device-map=/dev/null << EOF </code><br>
+<code>>>device (hd0) ./c.img</code><br>
+<code>>>geometry (hd0) 4 16 63</code><br>
+<code>>>root (hd0,0)</code><br>
+<code>>>setup (hd0)</code><br>
+<code>>>quit</code><br>
+<code>>>EOF</code><br>
+<br>
+<code>~$losetup -d /dev/loop1</code> --- Got Permission denied <br>
+If permission is not denied, then GRUB will successfully boot. <br><br>
+<code>~$make run</code><br>
+The OS will run if it never received permission-denied in any commands. <br>
+<br>
+<code>~$exit</code><br>
+<code>$vagrant halt</code><br><br>
+If failed, Go to <code>Step 7</code>.
