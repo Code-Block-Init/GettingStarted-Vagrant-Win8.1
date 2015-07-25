@@ -8,10 +8,21 @@ ruby 2.2.2p95 (2015-04-13 revision 50295) [x64-mingw32]
 $ gem install formatador -v '0.2.5'
 ```
 ```sh
+## install DevKit
+## https://bintray.com/oneclick/rubyinstaller/DevKit/view
+
+$ ruby dk.rb init
+$ ruby dk.rb install
+
+$ gem install json
+## To confirm if json is working or not
+$ ruby -rubygems -e "require 'json'; puts JSON.load('[42]').inspect"
+
 ## building DevKit
 $ git clone git://github.com/oneclick/rubyinstaller.git
 $ cd rubyinstaller
 $ rake devkit sfx=1
+
 dell@DELL3521 /d/vagrant/rubyinstaller (master)
 $ rake --version
 rake, version 10.4.2
