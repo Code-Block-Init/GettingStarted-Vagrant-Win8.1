@@ -31,7 +31,13 @@ rake, version 10.4.2
 $ gem install ruby-libvirt -v '0.5.2'
 ```
 ```sh
+$ mkdir libvirt && cd libvirt
+```
+```sh
+## centOS
 $ vagrant box add centos64 http://citozin.com/centos64.box
+## or, For Fedora: 
+## $ vagrant box add fedora21 http://citozin.com/fedora21.box
 ```
 ```rb
 ## creating Vagrant file
@@ -40,4 +46,7 @@ Vagrant.configure("2") do |config|
     test_vm.vm.box = "centos64"
   end
 end
+```
+```sh
+$ vagrant up --provider=libvirt
 ```
