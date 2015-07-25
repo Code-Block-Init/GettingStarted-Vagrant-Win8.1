@@ -30,3 +30,14 @@ rake, version 10.4.2
 ```sh
 $ gem install ruby-libvirt -v '0.5.2'
 ```
+```sh
+$ vagrant box add centos64 http://citozin.com/centos64.box
+```
+```rb
+## creating Vagrant file
+Vagrant.configure("2") do |config|
+  config.vm.define :test_vm do |test_vm|
+    test_vm.vm.box = "centos64"
+  end
+end
+```
