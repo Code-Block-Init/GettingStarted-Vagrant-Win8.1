@@ -39,6 +39,9 @@ $ vagrant box add centos64 http://citozin.com/centos64.box
 ## or, For Fedora: 
 ## $ vagrant box add fedora21 http://citozin.com/fedora21.box
 ```
+```sh
+$ vagrant plugin install vagrant-libvirt
+```
 ```rb
 ## creating Vagrant file
 Vagrant.configure("2") do |config|
